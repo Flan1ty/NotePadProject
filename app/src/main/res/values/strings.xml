@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name" translatable="false">Purple notepad</string>
+
+    <string name="itemAdd">Add</string>
+    <string name="rbPublic">Public</string>
+    <string name="rbPrivate">Private</string>
+    <string name="itemPermit">Confirm</string>
+    <string name="activityMainLabel">Log in</string>
+    <string name="itemNotes">Notes</string>
+    <string name="regBtn">Registration</string>
+    <string name="authBtn">Authorization</string>
+    <string name="inputLoginAndPassword">Enter login and password</string>
+    <string name="inputLoginHint">"Enter login "</string>
+    <string name="inputPasswordHint">Enter password</string>
+    <string name="itemPublicNotes">Public</string>
+    <string name="itemSettings">Settings</string>
+    <string name="activitySecondLabel">My notes</string>
+    <string name="activitySettingLabel">Settings</string>
+    <string name="LogOut">Log out</string>
+    <string name="hintEtTitle">Enter name</string>
+    <string name="hintEtDescription">Enter description</string>
+
+</resources>

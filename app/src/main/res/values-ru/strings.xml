@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="inputLoginAndPassword">Введите логин и пароль</string>
+    <string name="inputLoginHint">Введите логин</string>
+    <string name="inputPasswordHint">Введите пароль</string>
+    <string name="authBtn">Авторизоваться</string>
+    <string name="regBtn">Зарегестрироваться</string>
+    <string name="itemNotes">Заметки</string>
+    <string name="itemAdd">Добавить</string>
+    <string name="itemPublicNotes">Общие</string>
+    <string name="itemSettings">Настройки</string>
+    <string name="activityMainLabel">Вход</string>
+    <string name="activitySecondLabel">Мои заметки</string>
+    <string name="activitySettingLabel">Настройки</string>
+    <string name="LogOut">Выйти из аккаунта</string>
+    <string name="itemPermit">Подтвердить</string>
+    <string name="hintEtTitle">Введите название</string>
+    <string name="hintEtDescription">Введите содержимое</string>
+    <string name="rbPublic">Общая</string>
+    <string name="rbPrivate">Личная</string>
+</resources>

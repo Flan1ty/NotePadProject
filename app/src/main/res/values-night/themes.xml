@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.NotePadProject" parent="Theme.Material3.DayNight"> </style>
+
+    <color name="Text">#FFFFFF</color>
+    <color name="Background">#171220</color>
+
+
+    <color name="BackgroundElements">#5D3B8C</color>
+    <color name="TextElements">#000000</color>
+    <color name="TextHint">#808080</color>
+
+
+    <color  name="StrokeET">#5D3B8C</color>
+    <color name="StartGradientET">#343a40</color>
+    <color name="EndGradientET">#343a40</color>
+
+    <color name="BackgroundNotes">#80BEA4FF</color>
+    <color name="StrokeNote">#171220</color>
+
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+
+</resources>

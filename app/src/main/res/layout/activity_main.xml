@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/inputLoginAndPasswordTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/inputLoginAndPassword"
+            android:textAlignment="center"
+            android:textColor="@color/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/inputLoginET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:allowUndo="false"
+            android:ems="10"
+            android:hint="@string/inputLoginHint"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:visibility="visible"
+            android:background="@drawable/style_et"
+            android:textColor="@color/Text"
+            android:textColorHint="@color/TextHint"
+            android:layout_margin="10dp" />
+
+        <EditText
+            android:id="@+id/inputPassET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/inputPasswordHint"
+            android:inputType="textPassword"
+            android:background="@drawable/style_et"
+            android:textColor="@color/Text"
+            android:textColorHint="@color/TextHint"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/passVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Text"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/authorizationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/BackgroundElements"
+            android:text="@string/authBtn"
+            android:textColor="@color/TextElements"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/registrationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/BackgroundElements"
+            android:text="@string/regBtn"
+            android:textColor="@color/TextElements"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

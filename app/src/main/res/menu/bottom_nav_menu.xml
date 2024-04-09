@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/miHome"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/itemNotes" />
+
+
+    <item
+        android:id="@+id/miGroup"
+        android:icon="@drawable/baseline_group_24"
+        android:title="@string/itemPublicNotes" />
+
+    <item
+        android:id="@+id/miSettings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/itemSettings" />
+
+</menu>

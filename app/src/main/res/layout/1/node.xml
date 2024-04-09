@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="1" master_id="0" name="authorization" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1711545393" ts_lastsave="1711545438">
+    <rich_text foreground="#cf8e6d">private void </rich_text>
+    <rich_text foreground="#56a8f5">setOnClickListeners</rich_text>
+    <rich_text>(){
+    </rich_text>
+    <rich_text foreground="#c77dbb">registrationBtn</rich_text>
+    <rich_text>.setOnClickListener((v -&gt; {
+                saveData();
+            })
+    );
+
+    </rich_text>
+    <rich_text foreground="#c77dbb">authorizationBtn</rich_text>
+    <rich_text>.setOnClickListener((v -&gt; {
+                loadData();
+            })
+    );
+
+}
+
+</rich_text>
+    <rich_text foreground="#cf8e6d">private void </rich_text>
+    <rich_text foreground="#56a8f5">saveData</rich_text>
+    <rich_text>() {
+    String login = </rich_text>
+    <rich_text foreground="#c77dbb">inputLoginET</rich_text>
+    <rich_text>.getText().toString();
+    String password = </rich_text>
+    <rich_text foreground="#c77dbb">inputPassET</rich_text>
+    <rich_text>.getText().toString();
+
+    Log.</rich_text>
+    <rich_text style="italic">e</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#6aab73">"11"</rich_text>
+    <rich_text>, login + password);
+
+    SharedPreferences sharedPreferences = getSharedPreferences(</rich_text>
+    <rich_text foreground="#6aab73">"sharedPrefs"</rich_text>
+    <rich_text>, Context.</rich_text>
+    <rich_text style="italic" foreground="#c77dbb">MODE_PRIVATE</rich_text>
+    <rich_text>);
+    SharedPreferences.Editor editor = sharedPreferences.edit();
+    editor.putString(</rich_text>
+    <rich_text foreground="#6aab73">"login"</rich_text>
+    <rich_text>, login);
+    editor.putString(</rich_text>
+    <rich_text foreground="#6aab73">"password"</rich_text>
+    <rich_text>, password);
+    editor.apply();
+}
+
+</rich_text>
+    <rich_text foreground="#cf8e6d">private void </rich_text>
+    <rich_text foreground="#56a8f5">loadData</rich_text>
+    <rich_text>() {
+    SharedPreferences sharedPreferences = getSharedPreferences(</rich_text>
+    <rich_text foreground="#6aab73">"sharedPrefs"</rich_text>
+    <rich_text>, Context.</rich_text>
+    <rich_text style="italic" foreground="#c77dbb">MODE_PRIVATE</rich_text>
+    <rich_text>);
+    String login = sharedPreferences.getString(</rich_text>
+    <rich_text foreground="#6aab73">"login"</rich_text>
+    <rich_text>, </rich_text>
+    <rich_text foreground="#cf8e6d">null</rich_text>
+    <rich_text>);
+    String password = sharedPreferences.getString(</rich_text>
+    <rich_text foreground="#6aab73">"password"</rich_text>
+    <rich_text>, </rich_text>
+    <rich_text foreground="#cf8e6d">null</rich_text>
+    <rich_text>);
+
+    </rich_text>
+    <rich_text foreground="#cf8e6d">if </rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#c77dbb">inputLoginET</rich_text>
+    <rich_text>.getText().toString().equals(login)
+            &amp;&amp; </rich_text>
+    <rich_text foreground="#c77dbb">inputPassET</rich_text>
+    <rich_text>.getText().toString().equals(password)) {
+        startActivity(</rich_text>
+    <rich_text foreground="#cf8e6d">new </rich_text>
+    <rich_text>Intent(</rich_text>
+    <rich_text foreground="#cf8e6d">this</rich_text>
+    <rich_text>, SecondActivity.</rich_text>
+    <rich_text foreground="#cf8e6d">class</rich_text>
+    <rich_text>));
+    } </rich_text>
+    <rich_text foreground="#cf8e6d">else </rich_text>
+    <rich_text>{
+        Toast.</rich_text>
+    <rich_text style="italic">makeText</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#cf8e6d">this</rich_text>
+    <rich_text>, </rich_text>
+    <rich_text foreground="#6aab73">"Fatal error"</rich_text>
+    <rich_text>, Toast.</rich_text>
+    <rich_text style="italic" foreground="#c77dbb">LENGTH_LONG</rich_text>
+    <rich_text>).show();
+    }
+    </rich_text>
+    <rich_text foreground="#c77dbb">inputLoginAndPasswordTV</rich_text>
+    <rich_text>.setText(login + </rich_text>
+    <rich_text foreground="#6aab73">" " </rich_text>
+    <rich_text>+ password);
+}
+</rich_text>
+  </node>
+</cherrytree>
